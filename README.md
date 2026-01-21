@@ -3,3 +3,4 @@
 
 ## Package list
 _**001**_ [testpkg](./paks/testpkg)
+_**002**_ [man-pages](./paks/man-pages)
