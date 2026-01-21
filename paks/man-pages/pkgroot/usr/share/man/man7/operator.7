@@ -1,0 +1,44 @@
+'\" t
+.\" Copyright 1989-1993, The Regents of the University of California.
+.\" Copyright, the authors of the Linux man-pages project
+.\"
+.\" SPDX-License-Identifier: BSD-3-Clause
+.\"
+.TH operator 7 2025-05-17 "Linux man-pages 6.15"
+.SH NAME
+operator \- C operator precedence and order of evaluation
+.SH DESCRIPTION
+This manual page lists C operators and their precedence in evaluation.
+.P
+.TS
+lb lb lb
+l l l.
+Operator	Associativity	Notes
+[] () . \-> ++ \-\-	left to right	[1]
+++ \-\- & * + \- \[ti] ! sizeof	right to left	[2]
+(type)	right to left
+* / %	left to right
++ \-	left to right
+<< >>	left to right
+< > <= >=	left to right
+== !=	left to right
+&	left to right
+\[ha]	left to right
+|	left to right
+&&	left to right
+||	left to right
+?:	right to left
+= *= /= %= += \-= <<= >>= &= \[ha]= |=	right to left
+,	left to right
+.TE
+.P
+The following notes provide further information to the above table:
+.P
+.PD 0
+.IP [1] 5
+The ++ and \-\- operators at this precedence level are
+the postfix flavors of the operators.
+.IP [2]
+The ++ and \-\- operators at this precedence level are
+the prefix flavors of the operators.
+.PD
