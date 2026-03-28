@@ -45,3 +45,6 @@
 
 # KDE dir files
 .directory
+
+# pms files
+*.pms
